@@ -27,5 +27,8 @@
   },
   {
     "_include": "/twitter/card/TwitterSummaryLargeImageCard.json"
+  },
+  {
+    "_include": "/swifttype/SwiftTypeMeta.json"
   }
 ]

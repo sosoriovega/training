@@ -1,0 +1,82 @@
+.YourJourneyModule {
+
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+
+  &:not[data-color-black] {
+    color: rgb(42, 42, 42);
+  }
+
+  &[data-color-black] {
+    background-color: @color-black;
+    color: @color-white;
+  }
+
+  &[data-color-grey] {
+    background-color: @color-gray-light;
+  }
+
+  &-media {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+  }
+
+  &-title {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  &-description {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  &-endDate {
+    text-align: center;
+
+    > div {
+      font-size: 16px;
+      display: inline-block;
+      padding: 10px 0;
+      margin: 0 10px;
+      font-weight: bold;
+      flex-flow: column;
+    }
+  }
+
+  #YourJourneyModule-days:before { //lesshint idSelector: false
+    content: 'Days';
+    display: flex;
+    font-size: 11px;
+    font-weight: lighter;
+  }
+
+  #YourJourneyModule-hours:before { //lesshint idSelector: false
+    content: 'Hours';
+    display: flex;
+    font-size: 11px;
+    font-weight: lighter;
+  }
+
+  #YourJourneyModule-minutes:before { //lesshint idSelector: false
+    content: 'Minutes';
+    display: flex;
+    font-size: 11px;
+    font-weight: lighter;
+  }
+
+  #YourJourneyModule-seconds:before { //lesshint idSelector: false
+    content: 'Seconds';
+    display: flex;
+    font-size: 11px;
+    font-weight: lighter;
+  }
+
+}

@@ -152,6 +152,7 @@
   },
   "disclaimer": "© 2018 Perfect Sense.  Site designed by our talented design team and powered by our Brightspot publishing platform.  Privacy Policy",
   "boldMood": true,
+  "newField": "render new field",
   "_styledTemplate": "/core/article/ArticlePage.hbs",
   "_hidden": false
 }

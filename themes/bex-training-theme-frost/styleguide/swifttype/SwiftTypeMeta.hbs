@@ -1,0 +1,12 @@
+{{#with title}}
+    <meta class="swiftype" name="title" data-type="string" content="{{this}}">
+{{/with}}
+{{#each category}}
+    <meta class="swiftype" name="category" data-type="enum" content="{{this}}">
+{{/each}}
+{{#each author}}
+    <meta class="swiftype" name="author" data-type="string" content="{{this}}">
+{{/each}}
+{{#each tags}}
+    <meta class="swiftype" name="tags" data-type="string" content="{{this}}">
+{{/each}}

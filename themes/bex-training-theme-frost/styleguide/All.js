@@ -15,6 +15,8 @@ import SearchOverlay from './core/search/SearchOverlay.js'
 import { Tabs } from 'tabs'
 import VideoEvents from './core/video/VideoEvents.js'
 import VideoLead from './core/video/VideoLead.js'
+import { YourJourneyModule } from './core/journey/YourJourneyModule'
 
 plugins.register(Tabs, '[data-widget=Tabs]')
 plugins.register(PlyrFunctions, '[data-embeddedvideo-container]')
+plugins.register(YourJourneyModule, '.YourJourneyModule')

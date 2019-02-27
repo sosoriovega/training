@@ -11,5 +11,6 @@
     "_include": "/_group/ArticleBodies.json",
     "_key": 0
   },
+  "newField": "displays new field",
   "updatesCorrections": "{{html('This is an <strong>update</strong> to the original story.')}}"
 }

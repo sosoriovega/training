@@ -57,6 +57,9 @@
                         {{sectionNavigation}}
                     </div>
                 {{/if}}
+                {{#with newField}}
+                    <div class="ArticlePage-newField">{{this}}</div>
+                {{/with}}
                 {{#with headline}}
                     <h1 class="ArticlePage-headline" itemprop="headline">{{this}}</h1>
                 {{/with}}

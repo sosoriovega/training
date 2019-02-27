@@ -1,0 +1,42 @@
+<div class="YourJourneyModule" {{#with endDate}} data-enddate="{{this}}" {{/with}}
+    {{#if backgroundColor}}{{backgroundColor}}{{/if}}>
+
+    {{#unless imagePlacement}}
+        {{#with media}}
+            <div class="YourJourneyModule-media">{{this}}</div>
+        {{/with}}
+
+        {{#with endDate}}
+            <div class="YourJourneyModule-endDate">
+                <div id="YourJourneyModule-days"></div>
+                <div id="YourJourneyModule-hours"></div>
+                <div id="YourJourneyModule-minutes"></div>
+                <div id="YourJourneyModule-seconds"></div>
+            </div>
+        {{/with}}
+    {{/unless}}
+
+    {{#with title}}
+        <div class="YourJourneyModule-title">{{this}}</div>
+    {{/with}}
+
+    {{#with description}}
+        <div class="YourJourneyModule-description">{{this}}</div>
+    {{/with}}
+
+    {{#if imagePlacement}}
+        {{#with endDate}}
+            <div class="YourJourneyModule-endDate">
+                <div id="YourJourneyModule-days"></div>
+                <div id="YourJourneyModule-hours"></div>
+                <div id="YourJourneyModule-minutes"></div>
+                <div id="YourJourneyModule-seconds"></div>
+            </div>
+        {{/with}}
+
+        {{#with media}}
+            <div class="YourJourneyModule-media">{{this}}</div>
+        {{/with}}
+    {{/if}}
+
+</div>

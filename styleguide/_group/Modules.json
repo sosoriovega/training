@@ -64,5 +64,8 @@
   },
   {
     "_include": "/core/tab/Tabs.json"
+  },
+  {
+    "_include": "/core/journey/YourJourneyModule.json"
   }
 ]

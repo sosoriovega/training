@@ -3108,6 +3108,33 @@
           "groups": "brightspot.core.image.imageOption"
         }
       }
+    },
+    "/core/journey/YourJourneyModule.hbs": {
+      "width": 800,
+      "height": 500,
+      "scale": 0.2,
+      "example": "/core/journey/YourJourneyModule.json",
+      "fields": {
+        "backgroundColor": {
+          "type": "text",
+          "cms.ui.dropDown": true,
+          "cms.ui.note": "Default color is White",
+          "values": [
+            {
+              "label": "Black",
+              "value": "data-color-black"
+            },
+            {
+              "label": "Grey",
+              "value": "data-color-grey"
+            }
+          ]
+        },
+        "imagePlacement": {
+          "type": "boolean",
+          "cms.ui.note": "Place image below?"
+        }
+      }
     }
   },
   "imageSizes": {
@@ -3353,6 +3380,10 @@
         "3x"
       ],
       "format": "jpg"
+    },
+    "yourJourneyImage": {
+      "width": 600,
+      "height": 350
     }
   },
   "imageSizeContexts": {
@@ -3892,6 +3923,13 @@
         },
         "/core/image/Image.hbs": {
           "image": "moviePromoSmall"
+        }
+      }
+    },
+    "/core/journey/YourJourneyModule.hbs": {
+      "media": {
+        "/core/image/Image.hbs": {
+          "image": "yourJourneyImage"
         }
       }
     }
